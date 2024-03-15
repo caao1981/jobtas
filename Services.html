@@ -29,18 +29,22 @@
             justify-content: space-between;
         }
         .service-box {
-            width: calc(50% - 20px);
-            background-color: #f0f0f0;
-            border-radius: 8px;
-            padding: 70px;
-            margin-bottom: 20px;
-            transition: all 0.3s ease;
-            cursor: pointer;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
         }
-        .service-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+         .service-box:hover {
+    transform: translateY(-5px);
         }
+        .service-box img {
+    max-width: 100%;
+    border-radius: 50%;
         h2 {
             margin-top: 0;
         }
@@ -51,25 +55,23 @@
     <h1>Always Provide The Best Service</h1><br><br>
     <h3>our services</h3><br>
     <p>Discover the spectrum of possibilities as we cater to your diverse requirements.</p>
-    <div class="container">
-        <div class="service-box" onclick="window.location.href='application_form.html'">
-            <h2>Removals</h2><br>
-            <img src="assets/Images
-/ManAndVan2-650x521 (2).png" alt='Removals image">
-            <p>Swift andReliable Home or Office Reloction Solutions by JobTask</p>
-        </div>
-        <div class="service-box" onclick="window.location.href='application_form.html'">
-            <h2>Service 2</h2>
-            <p>Description of Service 2</p>
-        </div>
-        <div class="service-box" onclick="window.location.href='application_form.html'">
-            <h2>Service 3</h2>
-            <p>Description of Service 3</p>
-        </div>
-        <div class="service-box" onclick="window.location.href='application_form.html'">
-            <h2>Service 4</h2>
-            <p>Description of Service 4</p>
-        </div>
+   <div class="services-container">
+  <div class="service-box" onclick="location.href='step1.html';">
+    <img src="service1.jpg" alt="Service 1">
+    <h3>Service 1</h3>
+    <p>Description of Service 1</p>
+  </div>
+  <div class="service-box" onclick="location.href='step1.html';">
+    <img src="service2.jpg" alt="Service 2">
+    <h3>Service 2</h3>
+    <p>Description of Service 2</p>
+  </div>
+  <div class="service-box" onclick="location.href='step1.html';">
+    <img src="service3.jpg" alt="Service 3">
+    <h3>Service 3</h3>
+    <p>Description of Service 3</p>
+  </div>
+</div>
         <!-- Add more service boxes as needed -->
     </div>
 </body>
